@@ -4,19 +4,22 @@
       <Header />
     </div>
     <div class="view">
-      <router-view/>
+      <router-view />
     </div>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from "./components/Header.vue";
+
 export default {
   components: {
-    Header
-  }
-  
-}
+    Header,
+  },
+
+  async mounted() {
+  },
+};
 </script>
 
 <style>
@@ -28,15 +31,16 @@ export default {
   color: #fff;
   display: flex;
   flex-direction: column;
-  background-color: #100C2A;
+  background-color: #100c2a;
+  width: 100%;
+  height: 100vh;
 }
-header {
+.header {
   width: 100%;
   height: 60px;
 }
 .view {
   width: 100%;
-  height: 900px;
   flex: 1;
 }
 </style>

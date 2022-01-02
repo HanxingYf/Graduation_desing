@@ -1,5 +1,5 @@
 module.exports = {
-    global: {
-        Bmap: true
-    }
-}
+  globals: {
+    BMap: true,
+  },
+};
