@@ -23,6 +23,25 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  config.security = {
+    csrf :{
+      enable:false,
+    }
+  }
+  config.cors = {
+    origin: '*',
+    // credentials: true,
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+  };
+  config.redis = {
+    client: {
+      port: 6379,
+      host: '127.0.0.1',
+      password: '',
+      db: 0
+    }
+  }
+
   return {
     ...config,
     ...userConfig,

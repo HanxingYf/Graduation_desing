@@ -11,6 +11,8 @@
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "echarts": "^4.9.0",
+    "form-data": "^4.0.0",
+    "qs": "^6.10.2",
     "view-design": "^4.7.0",
     "vue": "^2.6.11",
     "vue-baidu-map": "^0.21.22",
@@ -41,7 +43,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars":"off"
+    }
   },
   "browserslist": [
     "> 1%",

@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
+    "egg-redis": "^2.4.0",
     "egg-scripts": "^2.11.0",
     "vue-bmap-gl": "^0.0.30",
     "vue-mapvgl": "^0.0.33"

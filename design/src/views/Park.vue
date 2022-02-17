@@ -28,6 +28,13 @@ export default {
           },
         ],
         tooltip: {},
+        legend: {
+          top: 40,
+          right: 200,
+          textStyle: {
+            color: '#fff'
+          }
+        },
         xAxis: {
           data: [
             "钻石大厦",
@@ -62,37 +69,27 @@ export default {
         },
         series: [
           {
-            name: "销量",
+            name: "实际功率",
             type: "bar",
+            stack: 'total',
             data: [37, 20, 36, 55, 44, 90, 20, 36, 55, 44],
             barWidth: 60,
-            itemStyle: {
-              normal: {
-                label: {
-                  show: true, //开启显示
-                  position: "top", //在上方显示
-                  textStyle: {
-                    //数值样式
-                    color: "#c3dbff",
-                    fontSize: 16,
-                  },
-                },
-              },
-            },
           },
           {
+            name: '额定功率',
             symbolSize: 20,
+            stack: 'total',
             data: [
-              [10.0, 8.04],
-              [8.07, 6.95],
-              [13.0, 7.58],
-              [9.05, 8.81],
-              [11.0, 8.33],
-              [14.0, 7.66],
-              [13.4, 6.81],
-              [10.0, 6.33],
-              [14.0, 8.96],
-              [12.5, 6.82],
+              [0, 50],
+              [1, 40],
+              [2, 45],
+              [3, 80],
+              [4, 60],
+              [5, 80],
+              [6, 34],
+              [7, 40],
+              [8, 60],
+              [9, 60],
             ],
             type: "scatter",
           },
@@ -109,7 +106,7 @@ export default {
             zoomLock: false,
           },
         ],
-        color: ["#40B983", "#fff"],
+        color: ["#40B983", "#dd3c3c"],
       });
     },
   },
